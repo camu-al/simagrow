@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="principal">#1F3D2B</color>
+    <color name="secundario">#4F6F5D</color>
+    <color name="principalBoton">#2F7D4E</color>
+    <color name="secundarioBoton">#5FAF7A</color>
+    <color name="fondo">#E6F5E9</color>
+    <color name="fondo2">#D4EEDF</color>
+    <color name="menu_normal">#E6F5E9</color>
+    <color name="menu_seleccionado">#1F3D2B</color>
+
+</resources>
