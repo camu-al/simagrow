@@ -61,7 +61,6 @@ class NoticiaAdapter(private val noticias: List<Noticia>) :
 
     fun formatearFecha(fechaOriginal: String): String {
         return try {
-            // Suponemos que Jsoup devuelve "2026-02-27" o "2026-02-27T09:06:01+01:00"
             val inputFormat = if (fechaOriginal.contains("T")) {
                 SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX", Locale.getDefault())
             } else {
@@ -70,13 +69,15 @@ class NoticiaAdapter(private val noticias: List<Noticia>) :
 
             val date = inputFormat.parse(fechaOriginal)
 
-            // Formato deseado: "27 de febrer de 2026" (catalán)
-            val outputFormat = SimpleDateFormat("d 'de' MMMM 'de' yyyy", Locale("ca"))
-            outputFormat.format(date)
+            val localeCa = Locale.forLanguageTag("ca-ES")
+            val outputFormat = SimpleDateFormat("d 'de' MMMM 'de' yyyy", localeCa)
+            outputFormat.format(date!!).lowercase()
+
         } catch (e: Exception) {
-            fechaOriginal // si falla, devuelvo la original
+            fechaOriginal
         }
     }
+
 
     fun resumirTextoNoticia(texto: String, maxChars: Int = 120): String {
         return if (texto.length > maxChars) {

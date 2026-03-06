@@ -25,6 +25,7 @@ import com.google.android.material.navigation.NavigationView
 import kotlinx.coroutines.launch
 import androidx.core.content.edit
 import android.util.Log
+import com.camu.simagrow.fragments.SoporteFragment
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -160,10 +161,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     // Botones menu drawer
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
-            R.id.nav_info -> showToast("Sobre nosotros")
-            R.id.nav_stats -> showToast("Estadísticas")
-            R.id.nav_logros -> showToast("Logros")
-            R.id.nav_soporte -> showToast("Soporte")
+            R.id.nav_info -> cargarFragments(AcercaDeFragment())
+            R.id.nav_soporte -> cargarFragments(SoporteFragment())
+            R.id.nav_mensajeSoporte -> cargarFragments(GestionAlumnosFragment())
             R.id.nav_ajustes -> cargarFragments(AjustesFragment())
             R.id.nav_salir -> mostrarAlerta(
                 titulo = "Cerrar sesión",

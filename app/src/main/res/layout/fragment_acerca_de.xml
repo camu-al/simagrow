@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- LOGO DE LA APP -->
+        <ImageView
+            android:id="@+id/imgLogoApp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/img_simagrow_logo" />
+
+
+        <!-- NOMBRE DE LA APP -->
+        <TextView
+            android:id="@+id/tvNombreApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="SimaGrow"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- VERSIÓN -->
+        <TextView
+            android:id="@+id/tvVersionApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Versión 1.0.0"
+            android:textColor="#777777"
+            android:textSize="14sp" />
+
+        <!-- SECCIÓN DE INFORMACIÓN -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Descripción"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- DESCRIPCIÓN -->
+            <TextView
+                android:id="@+id/tvDescripcionApp"
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="start"
+                android:text="SimaGrow es una aplicación diseñada para gestionar incidencias, comunicación con profesores y mejorar la organización del alumnado."
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Información del desarrollador"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAutor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desarrollado por: Alex Camuñas Martínez" />
+
+            <TextView
+                android:id="@+id/tvCentro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Centro: IES Dr. Lluís Simarro" />
+
+            <TextView
+                android:id="@+id/tvContacto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Contacto: soporte@simagrow.com" />
+
+            <TextView
+                android:id="@+id/tvLicencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Licencias y créditos"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvLicencias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esta aplicación utiliza una API propia desarrollada por el equipo del proyecto para comunicarse con Odoo y gestionar los datos de forma segura." />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -55,13 +55,13 @@ class LoginActivity : AppCompatActivity() {
 
                 if (usuario != null) {
                     Log.d("DEBUG_LOGIN", "Login correcto: $usuario")
-
                     guardarUsuario(
                         nia = usuario.nia,
                         nombre = usuario.nombre,
                         rol = usuario.rol,
                         curso = usuario.curso
                     )
+
 
                     startActivity(Intent(this@LoginActivity, MainActivity::class.java))
                     finish()
