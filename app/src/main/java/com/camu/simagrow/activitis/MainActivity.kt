@@ -132,7 +132,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         cursoUsuario = prefs.getString("curso", "")
         rolUsuario = prefs.getString("rol", "alumno")
 
-        isAlumno = rolUsuario == "alumno"
+        // CORRECCIÓN AQUÍ
+        isAlumno = rolUsuario?.trim()?.lowercase() == "alumno"
 
         Log.d("MAIN", "Nombre usuario: $nombreUsuario")
         Log.d("MAIN", "NIA usuario: $niaUsuario")
@@ -140,6 +141,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         Log.d("MAIN", "Curso usuario: $cursoUsuario")
         Log.d("MAIN", "isAlumno: $isAlumno")
     }
+
 
     // Boton menu superiror
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

@@ -10,6 +10,7 @@ import com.camu.simagrow.database.AppDatabase
 import com.camu.simagrow.databinding.ActivityLoginBinding
 import kotlinx.coroutines.launch
 import androidx.core.content.edit
+import com.camu.simagrow.api.RetroFitInstance
 import com.camu.simagrow.model.UsuarioEntity
 
 class LoginActivity : AppCompatActivity() {
@@ -50,13 +51,30 @@ class LoginActivity : AppCompatActivity() {
     // LOGIN
     private fun login(nia: String, password: String) {
         lifecycleScope.launch {
-            val usuarioLocal = db.usuarioDao().login(nia, password)
+            try {
+                val usuarios = RetroFitInstance.api.getUsuarios()
+                val usuarioDTO = usuarios.find { it.nia == nia.toInt() && it.password.equals(password, ignoreCase = true) }
 
-            if (usuarioLocal != null) {
-                toast("Login correcto")
-                abrirMain(usuarioLocal)
-            } else {
-                toast("Credenciales incorrectas")
+                if (usuarioDTO != null) {
+                    toast("Login correcto")
+                    val usuarioLocal = UsuarioEntity(
+                        nia = usuarioDTO.nia.toString(),
+                        nombre = usuarioDTO.nombre,
+                        rol = usuarioDTO.rol,
+                        curso = usuarioDTO.curso,
+                        password = usuarioDTO.password,
+                        materia = usuarioDTO.materia
+                    )
+
+                    db.usuarioDao().insertarUsuario(usuarioLocal)
+                    abrirMain(usuarioLocal)
+
+                } else {
+                    toast("Credenciales incorrectas")
+                }
+
+            } catch (e: Exception) {
+                toast("Error de conexión")
             }
         }
     }
@@ -83,7 +101,7 @@ class LoginActivity : AppCompatActivity() {
         prefs.edit {
             putString("nia", nia)
             putString("nombre", nombre)
-            putString("rol", rol)
+            putString("rol", rol.trim().lowercase())
             putString("curso", curso)
         }
     }
