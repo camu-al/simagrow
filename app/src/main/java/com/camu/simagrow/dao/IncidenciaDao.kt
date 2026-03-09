@@ -25,6 +25,9 @@ interface IncidenciaDao {
     @Delete
     suspend fun eliminarIncidencia(incidencia: IncidenciaEntity)
 
+    @Query("SELECT COUNT(*) FROM incidencias")
+    suspend fun contarIncidencias(): Int
+
     @Query("DELETE FROM incidencias")
     suspend fun borrarTodas()
 

@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.camu.simagrow.R
 import com.camu.simagrow.activitis.MainActivity
 import com.camu.simagrow.adapters.NoticiaAdapter
+import com.camu.simagrow.database.AppDatabase
 import com.camu.simagrow.databinding.FragmentInicioBinding
 import com.camu.simagrow.model.Noticia
 import kotlinx.coroutines.Dispatchers
@@ -25,7 +26,7 @@ class InicioFragment : Fragment() {
 
     private var _binding: FragmentInicioBinding? = null
     private val binding get() = _binding!!
-
+    private lateinit var db: AppDatabase
     private lateinit var noticiasAdapter: NoticiaAdapter
     private val noticiasList = mutableListOf<Noticia>()
 
@@ -39,6 +40,8 @@ class InicioFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        db = AppDatabase.getDatabase(requireContext())
+
         // Mostrar saludo personalizado
         val prefs = requireActivity().getSharedPreferences("usuario_prefs", 0)
         val nombreCompleto = prefs.getString("nombre", "Usuario") ?: "Usuario"
@@ -72,6 +75,12 @@ class InicioFragment : Fragment() {
         cargarNoticias()
     }
 
+    private fun cargarContador() {
+        lifecycleScope.launch {
+            val total = db.incidenciaDao().contarIncidencias()
+            binding.tvContador.text = total.toString()
+        }
+    }
     private fun cargarNoticias() {
         lifecycleScope.launch(Dispatchers.IO) {
             try {
@@ -103,6 +112,11 @@ class InicioFragment : Fragment() {
                 }
             }
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        cargarContador()
     }
 
     override fun onDestroyView() {

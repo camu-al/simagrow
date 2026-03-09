@@ -23,7 +23,6 @@ import java.util.Locale
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.RequestBody.Companion.toRequestBody
 
-
 class FormularioIncidenciasFragment : Fragment() {
 
     private var _binding: FragmentFormularioIncidenciasBinding? = null
@@ -60,6 +59,7 @@ class FormularioIncidenciasFragment : Fragment() {
                 return@setOnClickListener
             }
 
+            // Transformar fecha
             val fecha = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault()).format(Date())
 
             val prefs = requireActivity().getSharedPreferences("usuario_prefs", AppCompatActivity.MODE_PRIVATE)
@@ -97,6 +97,7 @@ class FormularioIncidenciasFragment : Fragment() {
             db.incidenciaDao().insertarIncidencia(incidencia)
 
             try {
+                // Incidencia tipo spring boot
                 val nombreBody = titulo.toRequestBody("text/plain".toMediaType())
 
                 RetroFitInstance.api.crearIncidencia(
@@ -112,6 +113,7 @@ class FormularioIncidenciasFragment : Fragment() {
                 Log.e("API", "Error enviando incidencia: ${e.message}")
             }
 
+            // Limiar formulario
             withContext(Dispatchers.Main) {
                 Toast.makeText(requireContext(), "Incidencia guardada", Toast.LENGTH_SHORT).show()
                 binding.etTitulo.text?.clear()
