@@ -88,7 +88,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="48dp"
-        android:text="Registrar"
+        android:text="@string/registrar"
         android:backgroundTint="@color/boton_principal"
         app:layout_constraintTop_toBottomOf="@id/layoutPassword"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -98,7 +98,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="70dp"
-        android:text="SimaGrow - 2026"
+        android:text="@string/simagrow_2026_login"
         android:textAlignment="center"
         android:textColor="@color/texto_secundario"
         android:textSize="16sp"

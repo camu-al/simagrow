@@ -10,7 +10,7 @@
         android:id="@+id/tvTituloPantallaIncidencias"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Reportar Incidencia"
+        android:text="@string/reportar_incidencia"
         android:textSize="22sp"
         android:textStyle="bold"
         android:textColor="@color/texto_principal"
@@ -23,7 +23,7 @@
         android:id="@+id/tvTitulo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Título de la incidencia"
+        android:text="@string/t_tulo_de_la_incidenciaFormulario"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
         app:layout_constraintTop_toBottomOf="@id/tvTituloPantallaIncidencias"
@@ -41,14 +41,14 @@
             android:id="@+id/etTitulo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Título de la incidencia"/>
+            android:hint="@string/t_tulo_de_la_incidencia"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/tvTipo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Tipo"
+        android:text="@string/tipo"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
         app:layout_constraintTop_toBottomOf="@id/layoutTitulo"
@@ -66,7 +66,7 @@
         android:id="@+id/tvZona"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Zona"
+        android:text="@string/zona"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
         app:layout_constraintTop_toBottomOf="@id/spTipo"
@@ -84,7 +84,7 @@
         android:id="@+id/tvDescripcion"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Descripción"
+        android:text="@string/descripci_nFormularioIncidencias"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
         app:layout_constraintTop_toBottomOf="@id/spZona"
@@ -103,7 +103,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minLines="3"
-            android:hint="Descripción de la incidencia"
+            android:hint="@string/descripci_n_de_la_incidencia"
             android:inputType="textMultiLine"/>
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -111,7 +111,7 @@
         android:id="@+id/btnGuardar"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:text="Reportar"
+        android:text="@string/reportar"
         android:backgroundTint="@color/boton_principal"
         android:layout_marginTop="24dp"
         app:layout_constraintTop_toBottomOf="@id/layoutDescripcion"

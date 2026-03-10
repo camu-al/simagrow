@@ -1,26 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <PreferenceCategory
-        android:title="Musica">
+    <PreferenceCategory android:title="@string/musica">
         <SwitchPreferenceCompat
             android:key="musica"
-            android:summaryOff="No escuchar musica"
-            android:summaryOn="Escuchar musica"
-            android:title="Musica"
-            android:defaultValue="true">
-        </SwitchPreferenceCompat>
+            android:title="@string/musica"
+            android:summaryOn="@string/escuchar_musica"
+            android:summaryOff="@string/no_escuchar_musica"
+            android:icon="@drawable/outline_music_note_24"
+            android:defaultValue="true" />
     </PreferenceCategory>
 
-    <PreferenceCategory
-        android:title="Apariencia">
+    <PreferenceCategory android:title="@string/apariencia">
         <SwitchPreferenceCompat
             android:key="oscuro"
-            android:summaryOff="Activar modo oscuro"
-            android:summaryOn="Desactivar modo oscuro"
-            android:title="Modo Oscuro">
-        </SwitchPreferenceCompat>
+            android:title="@string/modo_oscuro"
+            android:summaryOn="@string/desactivar_modo_oscuro"
+            android:summaryOff="@string/activar_modo_oscuro"
+            android:icon="@drawable/baseline_dark_mode_24" />
+    </PreferenceCategory>
 
+    <PreferenceCategory android:title="@string/idioma_app">
+        <ListPreference
+            android:key="idioma"
+            android:title="@string/idioma_app"
+            android:summary="@string/selecciona_idioma"
+            android:entries="@array/idiomas"
+            android:entryValues="@array/idiomas_valor"
+            android:icon="@drawable/baseline_language_24"
+            android:defaultValue="es" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/informacion">
+        <Preference
+            android:title="@string/version"
+            android:summary="1.0.0"
+            android:icon="@drawable/outline_info_24" />
     </PreferenceCategory>
 
 </PreferenceScreen>

@@ -1,11 +1,16 @@
 package com.camu.simagrow.fragments
 
+import android.content.Context
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.os.LocaleListCompat
+import androidx.preference.ListPreference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreferenceCompat
 import com.camu.simagrow.R
 import com.camu.simagrow.activitis.MainActivity
+import java.util.Locale
+import androidx.core.content.edit
 
 class AjustesFragment : PreferenceFragmentCompat() {
 
@@ -45,6 +50,24 @@ class AjustesFragment : PreferenceFragmentCompat() {
 
             true
         }
+
+        // Lenguaje
+        findPreference<ListPreference>("idioma")?.setOnPreferenceChangeListener { _, newValue ->
+            val lang = newValue.toString()
+
+            // Guardar idioma
+            requireContext().getSharedPreferences("settings", Context.MODE_PRIVATE).edit { putString("idioma", lang) }
+
+            // Aplicar idioma global
+            AppCompatDelegate.setApplicationLocales(
+                LocaleListCompat.forLanguageTags(lang)
+            )
+
+            requireActivity().recreate()
+            true
+        }
+
+
 
     }
 }

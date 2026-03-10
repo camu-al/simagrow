@@ -1,17 +1,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/bottom_IncidenciasTotales"
-        android:title="Incidencias"
+        android:title="@string/incidenciasProfe"
         android:icon="@drawable/outline_energy_program_time_used_24"/>
 
     <item
         android:id="@+id/bottom_HomeProfe"
-        android:title="Inicio"
+        android:title="@string/inicioProfe"
         android:icon="@drawable/outline_home_24"/>
 
     <item
         android:id="@+id/bottom_Gestionar_Alumnos"
-        android:title="Soporte"
+        android:title="@string/soporteNav"
         android:icon="@drawable/outline_contact_support_24"/>
 
 </menu>

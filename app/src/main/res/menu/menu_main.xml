@@ -6,7 +6,7 @@
         android:id="@+id/actionRegistrarIncidencia"
         android:icon="@drawable/outline_add_notes_24"
         android:orderInCategory="100"
-        android:title="Registrar Incidencia"
+        android:title="@string/registrar_incidencia"
         app:showAsAction="ifRoom" />
 
 </menu>

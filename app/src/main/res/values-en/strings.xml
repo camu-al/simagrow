@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SimaGrow</string>
+    <string name="fondo">Background</string>
+    <string name="logo">Logo</string>
+
+    <string name="comunicado_oficial_del_centro">Official School Announcement</string>
+    <string name="comunicadoOficial">The management team informs the entire educational community that, due to the open house event, next Wednesday’s schedule will be modified. Students and teachers are asked to check the changes published on the official notice board and the educational platform.</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open menu</string>
+    <string name="navigation_drawer_close">Close menu</string>
+    <string name="musica">Music</string>
+    <string name="escuchar_musica">Play music</string>
+    <string name="no_escuchar_musica">Do not play music</string>
+
+    <string name="apariencia">Appearance</string>
+    <string name="modo_oscuro">Dark mode</string>
+    <string name="desactivar_modo_oscuro">Disable dark mode</string>
+    <string name="activar_modo_oscuro">Enable dark mode</string>
+
+    <string name="idioma_app">App language</string>
+    <string name="selecciona_idioma">Select the language</string>
+
+    <string name="informacion">Information</string>
+    <string name="version">Version</string>
+
+    <string name="registrar">Register</string>
+    <string name="simagrow_2026">SimaGrow - 2026</string>
+    <string name="simagrow_2026_login">SimaGrow - 2026</string>
+    <string name="crear_cuenta">Create Account</string>
+    <string name="volver">Back</string>
+    <string name="confirmar_contrase_a">Confirm password</string>
+    <string name="contrase_a">Password</string>
+    <string name="nia">NIA</string>
+    <string name="nombre_completo">Full name</string>
+    <string name="registro">Register</string>
+    <string name="simagrow">SimaGrow</string>
+    <string name="versi_n_1_0_0">Version 1.0.0</string>
+    <string name="descripci_n">Description</string>
+    <string name="simagrow_es_una_aplicaci_n_dise_ada_para_gestionar_incidencias_comunicaci_n_con_profesores_y_mejorar_la_organizaci_n_del_alumnado">SimaGrow is an application designed to manage incidents, communicate with teachers, and improve student organization.</string>
+    <string name="informaci_n_del_desarrollador">Developer Information</string>
+    <string name="desarrollado_por_alex_camu_as_mart_nez">Developed by: Alex Camuñas Martínez</string>
+    <string name="centro_ies_dr_llu_s_simarro">Center: IES Dr. Lluís Simarro</string>
+    <string name="tel_fono_46018692">Phone: 46018692</string>
+    <string name="email_46018692_secretaria_edu_gva_es">Email: 46018692.secretaria@edu.gva.es</string>
+    <string name="horarios">Schedules</string>
+
+    <string name="matins_ndilluns_a_divendres_de_9_00h_a_14_00h_njuliol_i_setembre_ndilluns_a_divendres_de_9_00h_a_13_00h">
+        Mornings:
+        Monday to Friday from 9:00 to 14:00
+        July and September:
+        Monday to Friday from 9:00 to 13:00
+    </string>
+
+    <string name="vesprades_ndel_15_d_octubre_fins_el_15_de_maig_ndijous_16_00_a_20_30_hores_njuny_a_setembre_tancat">
+        Afternoons:
+        From October 15 to May 15
+        Thursday: 16:00 to 20:30
+        June to September: Closed
+    </string>
+
+    <string name="licencias_y_cr_ditos">Licenses and Credits</string>
+    <string name="esta_aplicaci_n_utiliza_una_api_propia_desarrollada_por_el_equipo_del_proyecto_para_comunicarse_con_odoo_y_gestionar_los_datos_de_forma_segura">This application uses a custom API developed by the project team to communicate with Odoo and securely manage data.</string>
+
+    <string name="descripci_n_de_la_incidencia">Incident description</string>
+    <string name="reportar">Report</string>
+    <string name="descripci_nFormularioIncidencias">Description</string>
+    <string name="zona">Area</string>
+    <string name="tipo">Type</string>
+    <string name="t_tulo_de_la_incidencia">Incident title</string>
+    <string name="t_tulo_de_la_incidenciaFormulario">Incident title</string>
+    <string name="reportar_incidencia">Report Incident</string>
+    <string name="enviar_mensaje_al_profesor">Send message to teacher</string>
+    <string name="profesor_nombre_o_email">Teacher (name or email)</string>
+    <string name="asunto">Subject</string>
+    <string name="escribe_tu_mensaje">Write your message</string>
+    <string name="enviar">Send</string>
+    <string name="mensajes_de_soporte">Support Messages</string>
+    <string name="mis_incidences">My Incidents</string>
+    <string name="bienvenido_a_simagrow">Welcome to SimaGrow, %1$s</string>
+    <string name="bienvenido_a_simagrow_alumno">Welcome to SimaGrow, Student</string>
+    <string name="mensaje">Message</string>
+    <string name="formulario">Form</string>
+    <string name="quieres_enviar_un_mensaje_a_tu_profesor">Do you want to send a message to your teacher?</string>
+    <string name="ir">Go</string>
+    <string name="crear_incidencia">Create incident</string>
+    <string name="crear_incidencia_inicio">Create incident</string>
+    <string name="incidenciascontador">IncidentCounter</string>
+    <string name="incidencias_totales">Total incidents</string>
+    <string name="numeroContador">0</string>
+    <string name="noticias_del_instituto">School News</string>
+    <string name="mis_mensajes">My Messages</string>
+    <string name="asunto_soporte">Subject</string>
+    <string name="escribe_tu_mensaje_soporte">Write your message</string>
+    <string name="enviarSoporte">Send</string>
+    <string name="descripci_n_breve_de_la_incidencia">Short description of the incident...</string>
+    <string name="pendiente">PENDING</string>
+    <string name="el_ctrico">ELECTRICAL</string>
+    <string name="_12_03_2026_10_30">03/12/2026 10:30</string>
+    <string name="zona_aula_2b">Area: Classroom 2B</string>
+    <string name="t_tulo_de_la_incidencia_item">Incident Title</string>
+    <string name="asunto_item_mensaje">Subject</string>
+    <string name="profesor_alumno">Teacher / Student</string>
+    <string name="fecha">Date</string>
+    <string name="mensaje_item">Message</string>
+    <string name="descripci_n_corta_de_la_noticia">Short description of the news…</string>
+    <string name="llegir_m_s">Read more…</string>
+    <string name="_27_de_febrer_de_2026">February 27, 2026</string>
+    <string name="t_tulo_de_la_noticia">News title</string>
+    <string name="imagen_noticia">News image</string>
+    <string name="alex_camu_as_mart_nez">Alex Camuñas Martínez</string>
+    <string name="nia_12345678">NIA: 12345678</string>
+    <string name="_2_dam">2 DAM</string>
+    <string name="simagrow_toolbar">SimaGrow</string>
+
+    <string name="ajustes">Settings</string>
+    <string name="soporte">Support</string>
+    <string name="acerca_de">About</string>
+    <string name="otros">Others</string>
+    <string name="cerrar_sesi_n">Log Out</string>
+    <string name="inicio">Home</string>
+    <string name="incidencias">Incidents</string>
+    <string name="mensajes">Messages</string>
+    <string name="registrar_incidencia">Register Incident</string>
+    <string name="incidenciasProfe">Incidents</string>
+    <string name="inicioProfe">Home</string>
+    <string name="soporteNav">Support</string>
+</resources>

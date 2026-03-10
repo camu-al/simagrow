@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
-            android:text="SimaGrow"
+            android:text="@string/simagrow"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -31,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:text="Versión 1.0.0"
+            android:text="@string/versi_n_1_0_0"
             android:textColor="#777777"
             android:textSize="14sp" />
 
@@ -45,7 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:text="Descripción"
+                android:text="@string/descripci_n"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -54,14 +54,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:text="SimaGrow es una aplicación diseñada para gestionar incidencias, comunicación con profesores y mejorar la organización del alumnado."
+                android:text="@string/simagrow_es_una_aplicaci_n_dise_ada_para_gestionar_incidencias_comunicaci_n_con_profesores_y_mejorar_la_organizaci_n_del_alumnado"
                 android:textSize="16sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:text="Información del desarrollador"
+                android:text="@string/informaci_n_del_desarrollador"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -69,33 +69,33 @@
                 android:id="@+id/tvAutor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Desarrollado por: Alex Camuñas Martínez" />
+                android:text="@string/desarrollado_por_alex_camu_as_mart_nez" />
 
             <TextView
                 android:id="@+id/tvCentro"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Centro: IES Dr. Lluís Simarro" />
+                android:text="@string/centro_ies_dr_llu_s_simarro" />
 
             <TextView
                 android:id="@+id/tvContactoTlf"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Teléfono: 46018692" />
+                android:text="@string/tel_fono_46018692" />
 
             <TextView
                 android:id="@+id/tvContacto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:text="Email: 46018692.secretaria@edu.gva.es" />
+                android:text="@string/email_46018692_secretaria_edu_gva_es" />
 
             <TextView
                 android:id="@+id/tvHorario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:text="Horarios"
+                android:text="@string/horarios"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -104,21 +104,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="2dp"
-                android:text="Matins:\nDilluns a divendres de 9:00h a 14:00h\nJuliol i Setembre:\nDilluns a divendres de 9:00h a 13:00h" />
+                android:text="@string/matins_ndilluns_a_divendres_de_9_00h_a_14_00h_njuliol_i_setembre_ndilluns_a_divendres_de_9_00h_a_13_00h" />
 
             <TextView
                 android:id="@+id/tvTextoHorarioVesprada"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:text="Vesprades:\nDel 15 d'octubre fins el 15 de maig\nDijous: 16:00 a 20:30 hores\nJuny a Setembre: Tancat" />
+                android:text="@string/vesprades_ndel_15_d_octubre_fins_el_15_de_maig_ndijous_16_00_a_20_30_hores_njuny_a_setembre_tancat" />
 
             <TextView
                 android:id="@+id/tvLicencia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:text="Licencias y créditos"
+                android:text="@string/licencias_y_cr_ditos"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -126,7 +126,7 @@
                 android:id="@+id/tvLicencias"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Esta aplicación utiliza una API propia desarrollada por el equipo del proyecto para comunicarse con Odoo y gestionar los datos de forma segura." />
+                android:text="@string/esta_aplicaci_n_utiliza_una_api_propia_desarrollada_por_el_equipo_del_proyecto_para_comunicarse_con_odoo_y_gestionar_los_datos_de_forma_segura" />
 
         </LinearLayout>
 

@@ -10,7 +10,7 @@
         android:id="@+id/tvTituloGestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mensajes de soporte"
+        android:text="@string/mensajes_de_soporte"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"

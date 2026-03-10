@@ -2,6 +2,7 @@ package com.camu.simagrow.activitis
 
 import MusicaPrincipal
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -22,6 +23,8 @@ import com.camu.simagrow.databinding.ActivityMainBinding
 import com.camu.simagrow.fragments.*
 import com.google.android.material.navigation.NavigationView
 import androidx.core.content.edit
+import androidx.core.os.LocaleListCompat
+import java.util.Locale
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -258,4 +261,25 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         pararMusica()
         super.onStop()
     }
+
+    override fun attachBaseContext(newBase: Context) {
+        val prefs = newBase.getSharedPreferences("settings", Context.MODE_PRIVATE)
+        val lang = prefs.getString("idioma", "es") ?: "es"
+
+        val locale = Locale(lang)
+        Locale.setDefault(locale)
+
+        val config = newBase.resources.configuration
+        config.setLocale(locale)
+
+        val context = newBase.createConfigurationContext(config)
+        super.attachBaseContext(context)
+    }
+
+    override fun recreate() {
+        overridePendingTransition(0, 0)
+        super.recreate()
+        overridePendingTransition(0, 0)
+    }
+
 }

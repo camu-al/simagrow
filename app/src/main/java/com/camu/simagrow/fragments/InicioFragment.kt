@@ -1,5 +1,6 @@
 package com.camu.simagrow.fragments
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -38,6 +39,7 @@ class InicioFragment : Fragment() {
         return binding.root
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         db = AppDatabase.getDatabase(requireContext())
@@ -46,7 +48,7 @@ class InicioFragment : Fragment() {
         val prefs = requireActivity().getSharedPreferences("usuario_prefs", 0)
         val nombreCompleto = prefs.getString("nombre", "Usuario") ?: "Usuario"
         val nombre = nombreCompleto.split(" ")[0]
-        binding.tvBienvenida.text = "Bienvenido a SimaGrow, $nombre"
+        binding.tvBienvenida.text = getString(R.string.bienvenido_a_simagrow, nombre)
 
         // Rol del usuario
         val rol = prefs.getString("rol", "alumno")?.trim()?.lowercase()

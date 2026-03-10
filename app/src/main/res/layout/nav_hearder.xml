@@ -28,7 +28,7 @@
             android:id="@+id/tvNombreUsuarioDrawer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Alex Camuñas Martínez"
+            android:text="@string/alex_camu_as_mart_nez"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -36,14 +36,14 @@
             android:id="@+id/tvNiaUsuarioDrawer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="NIA: 12345678"
+            android:text="@string/nia_12345678"
             android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvCursoUsuarioDrawer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2 DAM"
+            android:text="@string/_2_dam"
             android:textSize="14sp" />
 
     </LinearLayout>

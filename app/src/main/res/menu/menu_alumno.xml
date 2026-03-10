@@ -1,16 +1,16 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/bottom_Incidencias"
-        android:title="Incidencias"
+        android:title="@string/incidencias"
         android:icon="@drawable/outline_energy_program_time_used_24"/>
 
     <item
         android:id="@+id/bottom_Home"
-        android:title="Inicio"
+        android:title="@string/inicio"
         android:icon="@drawable/outline_home_24"/>
 
     <item
         android:id="@+id/bottom_MensajeProfe"
-        android:title="Mensajes"
+        android:title="@string/mensajes"
         android:icon="@drawable/outline_forward_to_inbox_24"/>
 </menu>
