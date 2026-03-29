@@ -31,14 +31,13 @@ A continuación se muestran algunas capturas reales de la aplicación funcionand
 - 🔐 **Login de usuarios**
 - 📝 **Registro de usuarios**
 - 🗂️ **Almacenamiento local con Room**
-- 🗂️ **Almacenamiento online con Spring Boot**
 - 🎨 **Interfaz moderna con Material Design**
 - 🔄 **Persistencia de sesión con SharedPreferences**
 - 📚 **Arquitectura limpia y organizada**
 
 ---
 
-## 🏗️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 | Tecnología | Uso |
 |-----------|------|
@@ -51,7 +50,7 @@ A continuación se muestran algunas capturas reales de la aplicación funcionand
 
 ---
 
-## 👤 Autor
+## Autor
 
 **Alex Camuñas Martínez**  
 
