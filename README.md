@@ -70,13 +70,13 @@ A continuación se muestran capturas reales de la interfaz de usuario, destacand
     </td>
     <td valign="top" align="center">
       <img src="https://github.com/user-attachments/assets/eebb6680-1cf7-4af1-a220-15fa7197d883" width="200" /><br>
-      <sub>Home / Dashboard</sub><br><br>
+      <sub>Home</sub><br><br>
       <img src="https://github.com/user-attachments/assets/9f8dbfef-ecd4-4654-bae9-3b1ca903899a" width="200" /><br>
       <sub>Actividades</sub>
     </td>
     <td valign="top" align="center">
       <img src="https://github.com/user-attachments/assets/87500d25-b462-45ca-bb5c-eaa42162947f" width="200" /><br>
-      <sub>Listado de Cursos</sub><br><br>
+      <sub>Listado de mensajes al professorado</sub><br><br>
       <img src="https://github.com/user-attachments/assets/87fba2f6-ba23-4cf6-98cc-080de1a08262" width="200" /><br>
       <sub>Detalle de Curso</sub>
     </td>
