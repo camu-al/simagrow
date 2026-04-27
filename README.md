@@ -62,11 +62,6 @@ A continuación se muestran capturas reales de la interfaz de usuario, destacand
 
 <table align="center">
   <tr>
-    <td align="center"><b>Autenticación</b></td>
-    <td align="center"><b>Panel Principal</b></td>
-    <td align="center"><b>Gestión de Cursos</b></td>
-  </tr>
-  <tr>
     <td valign="top" align="center">
       <img src="https://github.com/user-attachments/assets/7fc168f0-2fb9-46e2-875c-f88fd834cfd5" width="200" /><br>
       <sub>Login</sub><br><br>
