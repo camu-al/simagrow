@@ -62,6 +62,11 @@ A continuación se muestran capturas reales de la interfaz de usuario, destacand
 
 <table align="center">
   <tr>
+    <td align="center"><b>🔐 Acceso y Seguridad</b></td>
+    <td align="center"><b>🏠 Panel Principal</b></td>
+    <td align="center"><b>👤 Usuario y Soporte</b></td>
+  </tr>
+  <tr>
     <td valign="top" align="center">
       <img src="https://github.com/user-attachments/assets/7fc168f0-2fb9-46e2-875c-f88fd834cfd5" width="200" /><br>
       <sub>Login</sub><br><br>
@@ -76,26 +81,33 @@ A continuación se muestran capturas reales de la interfaz de usuario, destacand
     </td>
     <td valign="top" align="center">
       <img src="https://github.com/user-attachments/assets/87500d25-b462-45ca-bb5c-eaa42162947f" width="200" /><br>
-      <sub>Listado de mensajes al professorado</sub><br><br>
+      <sub>Mensajes al profesorado</sub><br><br>
       <img src="https://github.com/user-attachments/assets/87fba2f6-ba23-4cf6-98cc-080de1a08262" width="200" /><br>
       <sub>Perfil del alumno</sub>
     </td>
   </tr>
   <tr>
+    <td align="center"><b>🛠️ Soporte Técnico</b></td>
+    <td align="center"><b>ℹ️ Información</b></td>
+    <td align="center"><b>📱 Estado UX</b></td>
+  </tr>
+  <tr>
     <td valign="top" align="center">
       <img src="https://github.com/user-attachments/assets/6d7438ad-e80b-4219-9b9e-8c8ba183ddb2" width="200" /><br>
-      <sub>Listado de Incidencias</sub>
+      <sub>Mensajes a soporte</sub>
     </td>
     <td valign="top" align="center">
       <img src="https://github.com/user-attachments/assets/27b92eea-2ebe-4c88-b78e-dbe96e1407b3" width="200" /><br>
-      <sub>Creación de Datos</sub>
+      <sub>Información de la App</sub>
     </td>
     <td valign="top" align="center">
       <img src="https://github.com/user-attachments/assets/eebb6680-1cf7-4af1-a220-15fa7197d883" width="200" style="opacity: 0.5;" /><br>
-      <sub>UX Flow</sub>
+      <sub>Clean Navigation Flow</sub>
     </td>
   </tr>
 </table>
+
+---
 
 ## 👤 Contacto
 <div align="left">
