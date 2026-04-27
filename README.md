@@ -6,8 +6,6 @@
 
 **SimaGrow** es una aplicación móvil nativa diseñada para centralizar la gestión de incidencias, usuarios, cursos y actividades. El proyecto se enfoca en ofrecer una experiencia de usuario fluida y un sistema de persistencia robusto, garantizando la integridad de los datos en entornos de gestión educativa o corporativa.
 
----
-
 ## 🎯 Propósito del Proyecto
 
 El objetivo de SimaGrow fue construir una herramienta de gestión interna que destaque por su eficiencia técnica y facilidad de uso. Se puso especial énfasis en el manejo de datos locales y el ciclo de vida de la aplicación.
@@ -15,8 +13,6 @@ El objetivo de SimaGrow fue construir una herramienta de gestión interna que de
 * **Arquitectura de Datos:** Implementación de un esquema relacional local complejo mediante Room.
 * **Seguridad de Sesión:** Gestión de credenciales y estados de usuario persistentes.
 * **Estándar Visual:** Adopción de las guías de Material Design para una interfaz moderna y coherente.
-
----
 
 ## 📐 Arquitectura del Sistema
 
