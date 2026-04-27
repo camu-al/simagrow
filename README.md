@@ -62,11 +62,6 @@ A continuación se muestran capturas reales de la interfaz de usuario, destacand
 
 <table align="center">
   <tr>
-    <td align="center"><b>🔐 Acceso y Seguridad</b></td>
-    <td align="center"><b>🏠 Panel Principal</b></td>
-    <td align="center"><b>👤 Usuario y Soporte</b></td>
-  </tr>
-  <tr>
     <td valign="top" align="center">
       <img src="https://github.com/user-attachments/assets/7fc168f0-2fb9-46e2-875c-f88fd834cfd5" width="200" /><br>
       <sub>Login</sub><br><br>
@@ -85,11 +80,6 @@ A continuación se muestran capturas reales de la interfaz de usuario, destacand
       <img src="https://github.com/user-attachments/assets/87fba2f6-ba23-4cf6-98cc-080de1a08262" width="200" /><br>
       <sub>Perfil del alumno</sub>
     </td>
-  </tr>
-  <tr>
-    <td align="center"><b>🛠️ Soporte Técnico</b></td>
-    <td align="center"><b>ℹ️ Información</b></td>
-    <td align="center"><b>📱 Estado UX</b></td>
   </tr>
   <tr>
     <td valign="top" align="center">
